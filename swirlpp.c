@@ -4000,9 +4000,6 @@ ST_FUNC int swirl_preprocess(SwirlState *s1)
                 | PARSE_FLAG_SPACES
                 | PARSE_FLAG_ACCEPT_STRAYS
                 ;
-    /* Credits to Fabrice Bellard's initial revision to demonstrate its
-       capability to compile and run itself, provided all numbers are
-       given as decimals. swirl -E -P10 will do. */
     if (s1->Pflag == LINE_MACRO_OUTPUT_FORMAT_P10)
         parse_flags |= PARSE_FLAG_TOK_NUM, s1->Pflag = 1;
 
